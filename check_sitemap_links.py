@@ -1,3 +1,4 @@
+print("Проверка sitemap.xml начата. Ожидайте завершение проверки.")
 import requests
 from bs4 import BeautifulSoup
 
@@ -23,4 +24,4 @@ with open("results.txt", "w") as file:
     for url, status_code in results.items():
         file.write(f"URL: {url}, Status Code: {status_code}\n")
 
-print("Результаты проверки сохранены в файл results.txt")
+print("Проверка завершена. Результаты проверки сохранены в файл results.txt")
